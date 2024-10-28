@@ -4,15 +4,10 @@ Minecraft Mod. Ensures correct destinations when travelling back and forth throu
 
 - [Modpack Permissions](https://mods.twelveiterations.com/permissions)
 
-#### Forge
+#### Downloads
 
 [![Versions](http://cf.way2muchnoise.eu/versions/241160_latest.svg)](https://www.curseforge.com/minecraft/mc-mods/netherportalfix)
 [![Downloads](http://cf.way2muchnoise.eu/full_241160_downloads.svg)](https://www.curseforge.com/minecraft/mc-mods/netherportalfix)
-
-#### Fabric
-
-[![Versions](http://cf.way2muchnoise.eu/versions/547696_latest.svg)](https://www.curseforge.com/minecraft/mc-mods/netherportalfix-fabric)
-[![Downloads](http://cf.way2muchnoise.eu/full_547696_downloads.svg)](https://www.curseforge.com/minecraft/mc-mods/netherportalfix-fabric)
 
 ## Contributing
 
