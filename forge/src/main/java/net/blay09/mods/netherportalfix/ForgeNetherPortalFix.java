@@ -1,18 +1,19 @@
 package net.blay09.mods.netherportalfix;
 
 import net.blay09.mods.balm.api.Balm;
-import net.blay09.mods.balm.api.EmptyLoadContext;
+import net.blay09.mods.balm.forge.ForgeLoadContext;
 import net.minecraftforge.fml.IExtensionPoint;
-import net.minecraftforge.fml.ModLoadingContext;
 import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 
 @Mod(NetherPortalFix.MOD_ID)
 public class ForgeNetherPortalFix {
 
-    public ForgeNetherPortalFix() {
-        Balm.initialize(NetherPortalFix.MOD_ID, EmptyLoadContext.INSTANCE, NetherPortalFix::initialize);
+    public ForgeNetherPortalFix(FMLJavaModLoadingContext context) {
+        final var loadContext = new ForgeLoadContext(context.getModEventBus());
+        Balm.initialize(NetherPortalFix.MOD_ID, loadContext, NetherPortalFix::initialize);
 
-        ModLoadingContext.get().registerExtensionPoint(IExtensionPoint.DisplayTest.class, () -> new IExtensionPoint.DisplayTest(() -> IExtensionPoint.DisplayTest.IGNORESERVERONLY, (a, b) -> true));
+        context.registerDisplayTest(IExtensionPoint.DisplayTest.IGNORE_ALL_VERSION);
     }
 
 }
