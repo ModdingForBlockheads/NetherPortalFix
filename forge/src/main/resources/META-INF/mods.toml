@@ -5,7 +5,7 @@ issueTrackerURL="https://github.com/TwelveIterationMods/NetherPortalFix/issues"
 
 [[mods]]
 modId="netherportalfix"
-version="${mod_version}"
+version="${version}"
 displayName="NetherPortalFix"
 displayURL="https://mods.twelveiterations.com/mc/netherportalfix"
 logoFile="netherportalfix-icon.png"
