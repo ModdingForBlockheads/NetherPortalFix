@@ -1,1 +1,1 @@
-- Updated to Minecraft 1.21.1
+- Fixed mod falsely being required on clients on newer Balm versions
