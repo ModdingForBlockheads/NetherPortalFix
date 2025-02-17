@@ -17,6 +17,8 @@ public class NetherPortalFix {
     public static final Logger logger = LogManager.getLogger();
 
     public static void initialize() {
+        Balm.getNetworking().allowServerOnly(MOD_ID);
+
         // TODO Why do we have both this and a mixin?
         Balm.getEvents().onEvent(PlayerChangedDimensionEvent.class, event -> {
             final ServerPlayer player = event.getPlayer();
